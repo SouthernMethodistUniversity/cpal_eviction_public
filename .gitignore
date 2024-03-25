@@ -1,1 +1,3 @@
-/data/*.csv
+# Prevent committing data to public repo
+data/*.csv
+data/*.xlsx
