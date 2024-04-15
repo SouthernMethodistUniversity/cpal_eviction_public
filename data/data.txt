@@ -1,0 +1,5 @@
+NTEP_eviction_cases.csv
+DallasCounty_EvictionRecords.xlsx
+DallasCounty_EvictionJudgements.xlsx
+DallasCounty_HistoricalEvictionRecords.xlsx
+judgements_GEOIDS.csv
