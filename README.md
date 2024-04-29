@@ -13,8 +13,29 @@ Finally, the Rent data set came from the American Community Survey (ACS) from th
 
 ## Methods - Analysis
 ### Maps
-what and results w/ images
+Next, we were able to generate many maps to show evictions by census tract, judgment amount by census tract, median contract rent by census tract, median renter income by census tract, and percent rent of income by census tract. 
+[Number of Evictions](results/numevict.png)
+[Income](results/med_income.png)
+[Judgement Amounts](results/med_jud_amt.png)
+[Percent Rent of Income](results/med_pct_rent.png)
+[Number of Evictions](results/num_evict.png)
+
 ### Graphs
 In the summer of 2023, SMU REU students explored this project further. Their main focus in regards to evictions was analyzing the judgment amounts along with the number of evictions, and evictions regarding renters. 
 In order to properly analyze our data set, mainly the Historical Evictions Merged dataset, we first wanted to take out any entries that corresponded to the eviction of businesses as at this time are only interested in residential evictions. From this, we were able to create a data subset that disregarded approximately 450 of these business eviction entries. We then were interested in looking at residential eviction cases with judgements of `$0`. We were able to find that 16.874% of the eviction dataset were eviction cases that ended with `$0` in judgements. Once we were able to conceptualize this, we moved on to the non-zero judgment cases that we are more interested in and make up the majority of our data . To visualize these non-zero judgements, we created a histogram with the judgment amount and counts to see the distribution
-[Distribution of Non-Zero Judgement Amounts of Residential Locations](results/nonzerojudge.png) 
+[Distribution of Non-Zero Judgment Amounts of Residential Locations](results/distnonzerojudge.png) 
+
+Additionally, the distribution of Non-Zero Judgment amounts only including residential evictions was graphed. 
+[Distribution of Non-Zero Judgment Amounts of Residential Locations](results/distresidentialnonzero.png)
+
+One problem that we encountered in the data was repeat case numbers. We were unsure whether these repeats were intentional and important to keep, so we had to do some investigating. Some of the defendants appeared multiple times with the same address, same cae number, and same file date. Although this information was all the same, the judgment amounts were different, so they may not be entirely identical. Upon talking to Dr. Spector, we concluded that these repeats may be due to multiple appearances in court. This could mean that the case was dismissed for the day due to weather or some other factor such as the case being reopened after being closed. Additionally, the different judgment amounts may be due to administrative fees. This is not entirely legal, so we may come back to analyze this further at a later time. Ultimately, the maximum number of times a case number reappeared in the data was three, so in our dataset of 8737 cases, this number is rather small, and we concluded that we were not concerned with this affecting our data much.  
+
+Upon examining the eviction data we have, we found recurring instances of a single plaintiff address being associated with a variety of plaintiff names. We speculate several explanations for these associations. We attribute a handful of these cases to clerical errors in the case filings, such as misspelling and slight variations on the plaintiff address and/or plaintiff name across multiple cases. However, some plaintiff addresses appear to be associated with third-party real estate agents focused on property management and development. Additionally, in some cases, the third-party agent appears to be a company that specializes in evictions. This finding merits additional research to understand the potential impact of corporate residential services on eviction cases, specifically as it pertains to unequal representation and proficiency in eviction court. This could raise a legal issue with who the plaintiff really is. Finally, it is important to note that there are a variety of cases in the data that do not have a clear explanation as to why there are multiple plaintiff names associated with a single plaintiff address. Further research can be conducted to uncover underlying patterns between these ambiguous cases. 
+
+We were able to see that there is an obvious decline with the number of evictions before Covid than after Covid. More interestingly, we were able to look at the slopes pre and post Covid. The slope post Covid is much higher and continually rising compared to the somewhat stagnant slope pre-Covid. 
+[Covid Evictions](results/evictionmonths.png)
+
+
+
+
+
