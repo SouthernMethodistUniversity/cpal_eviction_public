@@ -1,4 +1,4 @@
-# cpal_eviction_public
+# CPAL Eviction Project (Public Facing - No Raw Data)
 Public facing methodology for CPAL eviction project with Professor Spector.
 
 ## Project Overview 
