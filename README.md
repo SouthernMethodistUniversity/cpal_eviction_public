@@ -15,13 +15,13 @@ Finally, the Rent data set came from the American Community Survey (ACS) from th
 ### Maps
 Next, we were able to generate many maps to show evictions by census tract, judgment amount by census tract, median contract rent by census tract, median renter income by census tract, and percent rent of income by census tract. 
 
-![Number of Evictions](results/numevict.png?raw=true)
+![Number of Evictions](results/num_evict.png?raw=true)
 
 ![Income](results/med_income.png?raw=true?raw=true)
 
 ![Judgement Amounts](results/med_jud_amt.png?raw=true)
 
-![Percent Rent of Income](results/med_pct_rent.png?raw=true)
+![Percent Rent of Income](results/med_pct_rent_income.png?raw=true)
 
 ![Number of Evictions](results/num_evict.png?raw=true)
 
